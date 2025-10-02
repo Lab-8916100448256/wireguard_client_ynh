@@ -41,7 +41,7 @@ ram.runtime = "50M"
     [resources.permissions]
 
     [resources.apt]
-    packages = "wireguard"
+    packages = "wireguard-tools"
     packages_from_raw_bash = """
     if dpkg --compare-versions $(uname -r) lt 5.6; then
         echo wireguard-dkms linux-headers-$(uname -r)
